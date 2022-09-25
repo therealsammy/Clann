@@ -1,0 +1,59 @@
+
+// const validation = ((formField, message) => {
+
+//     if (!formField && formField == "") {
+
+//         const errorMessageElement = $(".error-text");
+
+//         errorMessageElement.html(message);
+//         errorMessageElement.addClass("show");
+
+//         return false;
+
+//     } else {
+//         return true;
+//     }
+// })
+
+// // Send data with AJAX
+
+// $(".button input").on("click", () => {
+
+//     const errorMessageElement = $(".error-text");
+
+//     // Declare variables to collect data from form
+
+//     // const firstName = $('#first_name').val();
+//     // const lastName = $("#last_name").val();
+//     // const email = $("#email").val();
+//     // const password = $("#password").val();
+//     // const image = $("#image");
+
+//     const form = 
+
+//     // check validation 
+
+//     // let fn = validation(firstName, " Input first name");
+//     // let ln = fn && validation(lastName, "Input last name");
+//     // let em = ln && validation(email, "Input email");
+//     // let ps = em && validation(password, "Input password");
+
+//     $.ajax({
+//             url: './php/signup.php',
+//             type: 'POST',
+//             data: new FormData(document.getElementById("form")),
+//             beforeSend: function() {
+//                 console.log(firstName)
+//             },
+//             success: function(response) {
+//                 // console.log(response);
+//                 errorMessageElement.html(response);
+//                 errorMessageElement.addClass("show");
+//             }
+//         })
+//         // if (ps) {
+
+//     // }
+
+
+// })
