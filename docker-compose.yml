@@ -7,7 +7,7 @@ services:
     ports:
       - 80:80
 
-    database:
+db:
       image: mysql
       volumes:
         - ./database://var/lib/mysql
