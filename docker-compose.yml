@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  web:
+    build: .
+    volumes:
+      - ./site:/var/www/html
+    ports:
+      - 80:80
+
+    database:
+      image: mysql
+      volumes:
+        - ./database://var/lib/mysql
+      enviroment:
+        MYSQL_DATABASE: clann
+      ports:
+        - 3306:3306
+
