@@ -6,12 +6,12 @@ services:
       - ./site:/var/www/html
     ports:
       - 80:80
-
-db:
+  db:
       image: mysql
       volumes:
         - ./database://var/lib/mysql
-      enviroment:
+      environment:
+        MYSQL_ALLOW_EMPTY_PASSWORD: true
         MYSQL_DATABASE: clann
       ports:
         - 3306:3306
