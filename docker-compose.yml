@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  web:
+  webapp:
     build: .
     volumes:
       - ./site:/var/www/html
